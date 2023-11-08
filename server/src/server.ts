@@ -1,3 +1,5 @@
-const text = 'Ola mundo'
+import { app } from './app'
 
-console.log(text)
+app.listen(3333, () => {
+  console.log('🚀 HTTP Server running an http://localhost:3333')
+})
