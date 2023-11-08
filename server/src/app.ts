@@ -1,6 +1,7 @@
 import express from 'express'
 import mongoose from 'mongoose'
 import { env } from './env'
+import { router } from './http/route'
 
 mongoose
   .connect(env.DATABASE_URL)
@@ -13,3 +14,5 @@ mongoose
   })
 
 export const app = express()
+
+app.use(router)
