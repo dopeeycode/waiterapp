@@ -1,5 +1,6 @@
 import { app } from './app'
+import { env } from './env'
 
-app.listen(3333, () => {
+app.listen(env.PORT, () => {
   console.log('🚀 HTTP Server running an http://localhost:3333')
 })
