@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 import { z } from 'zod'
-import { CreateCategoryUseCase } from '../../../use-cases/categories/create-category'
+import { CreateCategoryUseCase } from '../../../use-cases/category/create-category'
 
 export async function createCategoryController(
   request: Request,
