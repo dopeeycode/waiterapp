@@ -7,7 +7,7 @@ import * as productControllers from '../modules/product-controllers'
 export const router = Router()
 const {
   createProductController,
-  getProductsByCategoryController,
+  listProductsByCategoryController,
   listProductsController,
 } = productControllers
 
@@ -17,7 +17,7 @@ const { createCategoryController, listCategoriesController } =
 const {
   cancelOrderController,
   changeOrderStatusController,
-  createOrdersController,
+  createOrderController,
   listOrdersController,
 } = ordersControllers
 
@@ -25,7 +25,7 @@ router.get('/categories', listCategoriesController)
 
 router.post('/categories', createCategoryController)
 
-router.get('/categories:categoryID/products', getProductsByCategoryController)
+router.get('/categories/:categoryId/products', listProductsByCategoryController)
 
 router.get('/products', listProductsController)
 
@@ -37,8 +37,8 @@ router.post(
 
 router.get('/orders', listOrdersController)
 
-router.post('/orders', createOrdersController)
+router.post('/orders', createOrderController)
 
-router.patch('/orders:orderID', changeOrderStatusController)
+router.patch('/orders/:orderId', changeOrderStatusController)
 
-router.delete('/orders:orderID', cancelOrderController)
+router.delete('/orders/:orderId', cancelOrderController)
