@@ -1,7 +1,13 @@
 import Header from './components/Header'
+import Orders from './components/Orders'
 
 const App = () => {
-  return <Header />
+  return (
+    <>
+      <Header />
+      <Orders />
+    </>
+  )
 }
 
 export default App
