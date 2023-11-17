@@ -9,7 +9,7 @@ const Header = () => {
           <h2>Acompanhe os pedidos dos clientes</h2>
         </div>
         <div className="details-side-right">
-          <img src="./src/assets/images/logo.svg" alt="Logo" />
+          <img src="./public/images/logo.svg" alt="Logo" />
           <div>
             <h1>
               WAITER<span>APP</span>
