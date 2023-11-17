@@ -5,14 +5,9 @@ import * as S from './styles'
 const Orders = () => {
   return (
     <S.Container>
-      <OrdersBoard
-        orders={orders}
-        icon="🕑"
-        title="Fila de espera"
-        quantity={1}
-      />
-      <OrdersBoard orders={[]} icon="👩‍🍳" title="Em Produção" quantity={1} />
-      <OrdersBoard orders={[]} icon="✅" title="Pronto" quantity={1} />
+      <OrdersBoard orders={orders} icon="🕑" title="Fila de espera" />
+      <OrdersBoard orders={[]} icon="👩‍🍳" title="Em Produção" />
+      <OrdersBoard orders={[]} icon="✅" title="Pronto" />
     </S.Container>
   )
 }
