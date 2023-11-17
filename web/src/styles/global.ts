@@ -41,6 +41,11 @@ export const GlobalStyles = createGlobalStyle`
           url('${GeneralSansSemiboldTtf}') format('truetype');
   }
 
+  small {
+    font-weight: 500;
+    color: #333;
+  }
+
   * {
     margin: 0;
     padding: 0;
