@@ -23,7 +23,7 @@ const OrderModal = ({ order, visible, setIsVisible }: OderModalProps) => {
           <strong>Mesa {order?.table}</strong>
 
           <button type="button" onClick={() => setIsVisible(false)}>
-            <img src="./public/images/close-icon.svg" alt="" />
+            <img src="/public/images/close-icon.svg" alt="" />
           </button>
         </header>
 
